@@ -22,7 +22,7 @@ public class TestRecentItemsList{
 		RecentItemsList L = new RecentItemsList();
 		String expectedListItem = "a";
 		L.add(expectedListItem);
-		String listItem = L.getLast();
+		String listItem = L.getMostRecent();
 		assertNotNull(listItem);
 		assertEquals(expectedListItem, listItem);
 	}
@@ -35,7 +35,7 @@ public class TestRecentItemsList{
 		L.add("b");
 		L.add(expectedListItem);
 
-		assertEquals(expectedListItem,L.getFirst());
+		assertEquals(expectedListItem,L.getMostRecent());
 	}
 
 	@Test
