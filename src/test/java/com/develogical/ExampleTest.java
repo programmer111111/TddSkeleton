@@ -3,6 +3,7 @@ package com.develogical;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.assertEquals;
 import static org.hamcrest.core.Is.is;
 
 public class ExampleTest {
@@ -11,3 +12,5 @@ public class ExampleTest {
 		assertThat(new Example().answer(), is(42));
 	}
 }
+
+
